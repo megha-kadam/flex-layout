@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary : purple;
+    --color-gray : #ededed;
+    --color-dark : #000;
+    --color-white : #fff
+}

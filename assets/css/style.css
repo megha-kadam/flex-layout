@@ -144,6 +144,7 @@ a:is(:link, :visited){
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .watchCard img{
@@ -175,6 +176,88 @@ a:is(:link, :visited){
 
 .watchCard figcaption a{
     color: var(--color-white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* .......................download now css............ */
+
+
+.downloadCard{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.downloadCard .downloadContent{
+     display: flex;
+    flex-direction: column;
+}
+
+.downloadCard .downloadImg img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.downloadCard a.downloadLink{
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.downloadCard .downloadCast{
+    display: flex;
+}
+
+.downloadCard .downloadGenre{
+    display: flex
+}
+
+.downloadCard .downloadCast, 
+.downloadCard .downloadGenre{
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.downloadCard .downloadGenre h4,
+.downloadCard .downloadCast h4{
+    flex: 0 0 60px;
+    /* padding: 20px; */
+    align-self: center;
+}
+
+.downloadCard .downloadCast img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.downloadCard .downloadInfo{
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.downloadCard .downloadRating{
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    padding: 20px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media all and (min-width: 768px){
@@ -268,5 +351,13 @@ a:is(:link, :visited){
 
     .watchCard:nth-of-type(even){
         flex-direction: row-reverse;
+    }
+
+   .downloadCard .downloadContent{
+        flex-direction: row;
+    }
+
+    .downloadCard .downloadInfo{
+        flex-grow: 1;
     }
 }

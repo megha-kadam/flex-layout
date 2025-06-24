@@ -177,8 +177,6 @@ a:is(:link, :visited){
 .watchCard figcaption a{
     color: var(--color-white);
     position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
 }
@@ -260,6 +258,31 @@ a:is(:link, :visited){
     align-items: center;
 }
 
+/* .................gallery section css................. */
+
+.galleryImgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryImg{
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+
+.galleryImg a{
+    display: block;
+    height: 350px;
+    height: 100%;
+}
+
+.galleryImgs .galleryImg a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 @media all and (min-width: 768px){
     .navbar ul{
         flex-direction: row;
@@ -299,6 +322,29 @@ a:is(:link, :visited){
     .watchCard:nth-of-type(even){
         flex-direction: row-reverse;
     }
+
+    .galleryImgs{
+        margin-left: -10px;
+    }
+
+    .galleryImg {
+        margin-left: 10px;
+    }
+    .galleryImg:nth-child(4n + 1){
+        width: 480px;
+        flex-basis: 480px;
+    }
+
+    .galleryImg:nth-child(4n + 2){
+        width: 325px;
+        flex-basis: 325px;
+    }
+
+    .galleryImg:nth-child(4n + 3){
+        width: 270px;
+        flex-basis: 270px;
+    }
+
 }
 
 @media all and (min-width: 1180px){
@@ -360,4 +406,28 @@ a:is(:link, :visited){
     .downloadCard .downloadInfo{
         flex-grow: 1;
     }
-}
+
+    .galleryImgs{
+        margin-left: -10px;
+    }
+
+    .galleryImg {
+        margin-left: 10px;
+    }
+    .galleryImg:nth-child(4n + 1){
+        width: 480px;
+        flex-basis: 480px;
+    }
+
+    .galleryImg:nth-child(4n + 2){
+        width: 325px;
+        flex-basis: 325px;
+    }
+
+    .galleryImg:nth-child(4n + 3){
+        width: 270px;
+        flex-basis: 270px;
+    }
+
+    
+    }

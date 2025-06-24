@@ -292,6 +292,24 @@ a:is(:link, :visited){
     text-align: center;
 }
 
+/* ...................sidebar css............. */
+
+.wedget{
+    padding: 20px;
+}
+.wedget .wedgetCard {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    padding: 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.wedgetCard ul{
+    padding: 10px;
+}
+
 @media all and (min-width: 768px){
     .navbar ul{
         flex-direction: row;

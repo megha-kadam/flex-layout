@@ -283,6 +283,15 @@ a:is(:link, :visited){
     object-fit: cover;
 }
 
+/* ...........................footer csss.......................... */
+
+.footer{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 20PX;
+    text-align: center;
+}
+
 @media all and (min-width: 768px){
     .navbar ul{
         flex-direction: row;
